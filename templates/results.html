@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Resultado da Análise</h2>
+    <p><strong>Status:</strong> {{ 'Anomalia Detectada' if result else 'Tráfego Normal' }}</p>
+    <p><strong>Detalhes:</strong> {{ details }}</p>
+    <a href="/">Voltar</a>
+{% endblock %}

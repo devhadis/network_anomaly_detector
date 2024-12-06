@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+    <form action="/results" method="post">
+        <label for="src_ip">IP de Origem:</label>
+        <input type="text" id="src_ip" name="src_ip" required>
+
+        <label for="dst_ip">IP de Destino:</label>
+        <input type="text" id="dst_ip" name="dst_ip" required>
+
+        <label for="protocol">Protocolo:</label>
+        <input type="number" id="protocol" name="protocol" required>
+
+        <label for="packet_length">Tamanho do Pacote:</label>
+        <input type="number" id="packet_length" name="packet_length" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+{% endblock %}
